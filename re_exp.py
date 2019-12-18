@@ -12,13 +12,19 @@ abc@b.com
 drtcyftgbyhnjmk@dbc.net
 '''
 
+string_to_search1='fajftugiybhnij56789@gmail.com dfnavk avek'
+
 ptrn_obj=re.compile(ptrn)
 
 matching_ptrn=ptrn_obj.finditer(string_to_search)
 match_all=re.findall(ptrn1, string_to_search)
 
 srch=ptrn_obj.search(string_to_search)
-print("if search is found:", srch)
+mtch2=ptrn_obj.match(string_to_search1)
+if srch:
+    print("found the match")
+
+print("match2:",mtch2)
 
 print(match_all)
 
